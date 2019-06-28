@@ -1,0 +1,141 @@
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+} */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* 기본스타일 */
+html{
+    font-size:10px;
+}
+body{
+    font-size:1.4rem; /* 10px * 1.4 = 14px */
+    font-family: 'yg-jalnan';
+    font-weight: 400;
+    background: #ffb553;
+    color:#181818;
+}
+
+.logo img{
+  width:800px;
+  border:2px solid red
+}
+.container{
+  width:60%;
+  margin:30px auto 0;
+  padding:30px;
+  border-radius: 10px;
+  font-family: 'yg-jalnan';
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:50px;
+}
+.content-wrap{
+  margin-top:50px;
+}
+nav li{
+  float: left;
+  height:50px;
+  line-height: 50px;
+  margin-right:20px;
+}
+
+nav li:last-child{
+  margin-right:0
+}
+
+.rubber_duck{
+  width:30px;
+}
+.nav li span{
+  position: relative;
+  top:-10px;
+}
+.input-wrap{
+  width:80%;
+  margin:0 auto;
+}
+.input-wrap .input{
+  width:100%;
+  padding:10px;
+}
+@keyframes linebg {
+  0% {
+    opacity: 0;
+    transform: translate(0,0);
+  }
+  100% {
+    opacity: 0.5;
+    width:250px;
+    transform: translate(200px,1px);
+  }
+}
+.content-wrap{
+  position: relative;
+  margin-top:30px;
+}
+
+.line{
+  position: absolute;
+  top:0px;
+  left:0;
+  width:0px;
+  height:0px;
+  border:12px solid #cab1f3;
+  border-radius: 6px;
+  animation-name: linebg;
+  animation-duration:9000ms;
+  animation-fill-mode: forwards;
+  /* box-shadow:1px 1px 5px 8px #cab1f3;
+  -webkit-box-shadow:1px 1px 5px 8px #cab1f3;
+  -moz-box-shadow:1px 1px 5px 8px #cab1f3; */
+}
+#cb1{
+  position: absolute;
+  right:0;
+}
