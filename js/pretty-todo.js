@@ -15,7 +15,8 @@ function render() {
   $ulList.innerHTML = '';
 
   todos.forEach ((todo) => { 
-   $ulList.innerHTML += `<li>${todo.content}</li>`
+   $ulList.innerHTML += `<li><input type="checkbox" id="ex_chk3"> 
+   <label for="ex_chk3"></label>${todo.content}</li>`
   })
 }
 
