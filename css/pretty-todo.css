@@ -54,26 +54,21 @@ body{
     font-size:1.4rem; /* 10px * 1.4 = 14px */
     font-family: 'yg-jalnan';
     font-weight: 400;
-    background: #ffb553;
+    background: #ffb003;
     color:#181818;
 }
 
-.logo img{
-  width:800px;
-  border:2px solid red
-}
 .container{
-  width:60%;
+  width:65%;
   margin:30px auto 0;
   padding:30px;
-  border-radius: 10px;
   font-family: 'yg-jalnan';
 }
 nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top:50px;
+  margin-top:20px;
 }
 .content-wrap{
   margin-top:50px;
@@ -97,12 +92,23 @@ nav li:last-child{
   top:-10px;
 }
 .input-wrap{
+<<<<<<< HEAD
   width:80%;
   margin:50px auto 0;
+=======
+  width:90%;
+  margin: auto;
+>>>>>>> rmorigin/develop
 }
 .input-wrap .input{
   width:100%;
   padding:10px;
+}
+.input {
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 1px solid #ffb003;
+  outline: none;
 }
 @keyframes linebg {
   0% {
@@ -135,6 +141,7 @@ nav li:last-child{
   -webkit-box-shadow:1px 1px 5px 8px #cab1f3;
   -moz-box-shadow:1px 1px 5px 8px #cab1f3; */
 }
+<<<<<<< HEAD
 .checks {position: relative;} 
 .checks input[type="checkbox"] {  
   position: absolute; 
@@ -180,3 +187,20 @@ nav li:last-child{
   box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); 
 }
 
+=======
+#cb1{
+  position: absolute;
+  right:0;
+}
+.clear-completed {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.clearCompleted {
+  font-family: 'yg-jalnan';
+  border-radius: 7px;
+  border: 1px solid #ffb003;
+  padding-top: 5px;
+}
+>>>>>>> rmorigin/develop
